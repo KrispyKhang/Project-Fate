@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" style="background-image: linear-gradient(to right, black, grey);" class="h-screen bg-black-grey-gradient">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="./Assets/CSS/style.css">
+    <title>Moira</title>
+</head>
+<body>
+    <!-- Page1 -->
+    <div id="page-1">
+        <section id="pg1-main-contents" class="flex justify-center items-center h-screen">
+            <div class="pg1-left-content w-fit">
+                <img src="./Assets/images/zodiac wheel1.png" alt="Horoscope Wheel">
+            </div>
+            <div class="pg1-right-content w-1/2 text-white">
+                <h1 id="pg1-h1" class="2xl:text-8xl sm:text-2xl">What's Your Zodiac?</h1>
+                <p id="pg1-ptag" class="pt-10 2xl:text-4xl sm:text-sm">Find Out Your Weekly Horoscope</p> 
+                <button type="button" id="pg1-button" class="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-sm px-10 py-2.5 mr-2 mb-2 mt-10 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">Click here</button>
+            </div>
+        </section>
+    </div>
+
+    <!-- Page2 -->
+    <div id="page-2">
+        <section id="pg2-main-contents" class="flex justify-center items-center h-screen">
+            <div class="pg2-left-contents pl-20 w-1/2 text-white">
+                <h1 id="pg2-h1" class="pg2-h1 text-8xl pb-10">Select Your Sign</h1>
+                <div class="wrapper">
+                    <form id="userInput">
+                        <label for="answers" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Pick Your Sign:</label>
+                        <div class="form-n-button flex">
+                            <select id="answers" name="answers" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-l-lg focus:ring-blue-500 focus:border-blue-500 block w-500 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                <!-- <option value="" disabled hidden></option> -->
+                                <option value="aries">Aries</option>
+                                <option value="taurus">Taurus</option>
+                                <option value="gemini">Gemini</option>
+                                <option value="cancer">Cancer</option>
+                                <option value="leo">Leo</option>
+                                <option value="virgo">Virgo</option>
+                                <option value="libra">Libra</option>
+                                <option value="scorpius">Scorpius</option>
+                                <option value="sagittarius">Sagittarius</option>
+                                <option value="capricorn">Capricorn</option>
+                                <option value="aquarius">Aquarius</option>
+                                <option value="pisces">Pisces</option>
+                            </select>
+                            <button type="submit" id="pg3-button" class="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-r-lg text-sm p-2.5 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">Select</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="pg2-right-contents w-1/2">
+                <img src="./Assets/images/Page2 Image2.png" alt="Moon Design">
+            </div>
+        </section>
+    </div>
+
+    <!-- Page3 -->
+    <div id="page-3">
+        <header id="header" class="text-8xl p-12 text-white">
+            <h1 class="selected-sign" style="font-family: 'Canva Sans', sans-serif;"></h1>
+        </header>
+        <section id="main-contents" class="flex flex-row-reverse items-start p-12 text-lg text-white">
+            <div class="left-section">
+                <p class="weekly-horo" style="font-family: 'Canva Sans', sans-serif;"></p>
+            </div>
+            <div class="right-section">
+                <img class="w-1/2 h-auto" src="" alt="Sign Image">
+            </div>
+        </section>
+
+        <footer id="footer">
+            <div id="page-portal" class="flex">
+                <button type="button" id="page4-btn" class="p-12 text-white 2xl:text-4xl whitespace-nowrap sm:text-2xl" style="font-family: 'Canva Sans', sans-serif">Unlock Your Fortune</button>
+                <button type="button" id="page4-img"><img src="./Assets/images/arrow.png" alt="Greater Than Arrow Sign" style="max-width: 10%; height: auto; vertical-align: middle;"></button>
+            </div>
+        </footer>
+    </div>
+
+
+    <!-- Page4 -->
+    <div id="page-4">
+        <div class="container">
+            <div class="api-return1">
+                <div class="fortune-cookie">
+                    <img class="pg4-img" src="./Assets/images/Fortune Cookie.png" alt="FortuneCookie1">
+                </div>
+                <div class="text">
+                    <div class="Api-Return"></div>
+                </div>
+            </div>
+            <div class="button-container">
+                <button id="myButton">Go-Back</button>
+            </div>
+    </div>
+
+
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+    <script src="./Assets/js/script.js"></script>
+</body>
+</html>
