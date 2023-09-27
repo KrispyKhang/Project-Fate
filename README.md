@@ -1,7 +1,7 @@
 ### Group Project 1: Horoscope + Fortune API Integration
 
-* [Github Repository] (insert your link)
-* [Deployed Github] (insert your link)
+* [Github Repository] (https://github.com/KrispyKhang/Project-Fate)
+* [Deployed Github] (https://krispykhang.github.io/Project-Fate/)
 
 ## Project 1 Front-End Application - Challenge Guideline
 At the conclusion of each phase of this course, you’ll work with a group of your fellow students to create a project—collaborative work among a group of developers to create an application that solves a real-world problem. Projects model the experience you’ll encounter in every development role at any company, from large multinational businesses to small startups. Coding is collaborative.
